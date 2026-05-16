@@ -45,9 +45,9 @@ public interface VetRepository extends Repository<Vet, Integer> {
 	Collection<Vet> findAll();
 
 	/**
-	 * Retrieve all <code>Vet</code>s from data store in Pages
-	 * @param pageable
-	 * @return
+	 * Retrieve all <code>Vet</code>s from data store in Pages.
+	 * @param pageable the pagination information (page number, size, and sorting)
+	 * @return a {@link Page} of {@link Vet}s
 	 */
 	@Transactional(readOnly = true)
 	@Cacheable("vets")
