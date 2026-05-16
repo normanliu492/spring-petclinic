@@ -20,8 +20,7 @@ import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.NotBlank;
 
 /**
- * Simple JavaBean domain object adds a name property to
- * <code>BaseEntity</code>. Used as
+ * Simple JavaBean domain object adds a name property to <code>BaseEntity</code>. Used as
  * a base class for objects needing these properties.
  *
  * @author Ken Krebs
