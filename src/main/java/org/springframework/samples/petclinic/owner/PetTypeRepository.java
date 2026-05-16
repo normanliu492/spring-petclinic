@@ -24,6 +24,10 @@ import org.springframework.data.jpa.repository.Query;
 /**
  * Repository class for <code>PetType</code> domain objects.
  *
+ * <p>Provides data access operations for {@link PetType} entities, including a custom
+ * query to retrieve all pet types ordered alphabetically by name. Extends
+ * {@link org.springframework.data.jpa.repository.JpaRepository} for full JPA support.
+ *
  * @author Patrick Baumgartner
  */
 
