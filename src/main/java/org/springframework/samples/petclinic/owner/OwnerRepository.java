@@ -27,10 +27,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * Data. See:
  * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation
  *
- * <p>This repository provides CRUD operations for {@link Owner} entities, as well as
- * custom query methods for searching owners by last name and retrieving them by ID.
- * It extends {@link org.springframework.data.jpa.repository.JpaRepository} to leverage
- * full JPA support including pagination and sorting.
+ * <p>
+ * This repository provides CRUD operations for {@link Owner} entities, as well as custom
+ * query methods for searching owners by last name and retrieving them by ID. It extends
+ * {@link org.springframework.data.jpa.repository.JpaRepository} to leverage full JPA
+ * support including pagination and sorting.
  *
  * @author Ken Krebs
  * @author Juergen Hoeller
