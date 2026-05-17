@@ -18,7 +18,6 @@ package org.springframework.samples.petclinic.owner;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Objects;
-import java.util.Optional;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -78,10 +77,10 @@ class PetController {
 			return new Pet();
 		}
 
-		Optional<Owner> optionalOwner = this.owners.findById(ownerId);
-		Owner owner = optionalOwner.orElseThrow(() -> new IllegalArgumentException(
-				"Owner not found with id: " + ownerId + ". Please ensure the ID is correct "));
-		return owner.getPet(petId);
+		return this.owners.findById(ownerId)
+			.orElseThrow(() -> new IllegalArgumentException(
+					"Owner not found with id: " + ownerId + ". Please ensure the ID is correct "))
+			.getPet(petId);
 	}
 
 	@InitBinder("owner")
